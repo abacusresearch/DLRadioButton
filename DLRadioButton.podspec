@@ -1,25 +1,29 @@
-{
-	"name": "DLRadioButton",
-	"version": "1.4.12",
-	"summary": "A highly customizable Radio Button for iOS",
-	"description": "A highly customizable Radio Button for iOS.\n\n* Buttons are drew by UIBezierPath, customize it however you want.\n* You can also use pictures to indicate buttons' selection state.\n",
-	"homepage": "https://github.com/DavydLiu/DLRadioButton",
-	"screenshots": [
-		"https://raw.githubusercontent.com/DavydLiu/DLRadioButton/master/Images/DLRadioButton_screenshot1.png"
-	],
-	"license": "MIT",
-	"authors": {
-		"David Liu": "xingruo.liu@gmail.com"
-	},
-	"social_media_url": "http://twitter.com/DavydLiu",
-	"platforms": {
-		"ios": "6.0"
-	},
-	"source": {
-		"git": "https://github.com/DavydLiu/DLRadioButton.git",
-		"tag": "1.4.12"
-	},
-	"source_files": "DLRadioButton/**/*.{h,m}",
-	"exclude_files": "Classes/Exclude",
-	"requires_arc": true
-}
+#
+#  Be sure to run `pod spec lint AbaOauth.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
+#
+#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
+#
+
+Pod::Spec.new do |s|
+
+	s.name         = "DLRadioButton"
+	s.version      = "1.4.12"
+	s.summary      = "A highly customizable Radio Button for iOS"
+
+	s.description  = <<-DESC
+								 A highly customizable Radio Button for iOS.\n\n* Buttons are drew by UIBezierPath, customize it however you want.\n* You can also use pictures to indicate buttons' selection state.\n
+								 DESC
+
+	s.homepage     = "https://github.com/DavydLiu/DLRadioButton"
+
+	s.license      = "Abacus Proprietary (All Rights reserved)"
+	s.author       = { "Roger Misteli" => "roger.misteli@abacus.ch" }
+	s.platform     = :ios, "10.0"
+
+	s.source       = { :git => "https://github.com/fuggly/DLRadioButton.git", :tag => "#{s.version}" }
+
+	s.source_files = "DLRadioButton/**/*.{h,m}"
+
+end
